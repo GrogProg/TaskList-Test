@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d; /* Dark background for neon contrast */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.app {
+  background-color: #1a1a1a;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #0066ff;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffcc, 0 0 15px #0066ff;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group select {
+  padding: 10px;
+  font-size: 16px;
+  background: #121212;
+  border: 1px solid #00ffcc;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #00ffcc;
+  flex: 1 1 200px; /* responsive sizing */
+  min-width: 150px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background: #121212;
+  border: 1px solid #00ffcc;
+  color: #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #8000ff; /* Neon purple */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #8000ff, 0 0 20px #00ffcc;
+  transition: 0.2s;
+}
+
+.input-group button {
+  flex: 1 1 100px;
+  min-width: 100px;
+}
+
+button:hover {
+  background-color: #00ff66; /* Neon green on hover */
+  box-shadow: 0 0 15px #00ff66, 0 0 30px #00ffcc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #121212;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+  box-shadow: 0 0 10px #8000ff;
+}
+
+li button {
+  background: #ff007f; /* Neon pink delete button */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #ff007f;
+  transition: 0.2s;
+}
+
+li button:hover {
+  background: #ff4dff;
+  box-shadow: 0 0 15px #ff4dff;
+.status-green {
+  color: #00ff66;
+}
+
+.status-amber {
+  color: #ffcc00;
+}
+
+.status-red {
+  color: #ff3333;
+}
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.task-text {
+  font-weight: bold;
+  color: white;
+}
+
+.task-date {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.status-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 4px;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.status-dot.green {
+  background-color: #00ff66;
+}
+
+.status-dot.amber {
+  background-color: #ffcc00;
+}
+
+.status-dot.red {
+  background-color: #ff3333;
+}
+}
